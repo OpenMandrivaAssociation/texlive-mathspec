@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/xetex/latex/mathspec
+# catalog-date 2009-09-30 20:39:21 +0200
+# catalog-license lppl
+# catalog-version 0.2
 Name:		texlive-mathspec
 Version:	0.2
 Release:	1
@@ -43,6 +49,7 @@ requires at least version 0.9995 of XeTeX.
 %doc %{_texmfdistdir}/doc/xelatex/mathspec/README
 %doc %{_texmfdistdir}/doc/xelatex/mathspec/mathspec.pdf
 %doc %{_texmfdistdir}/doc/xelatex/mathspec/mathspec.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +60,5 @@ requires at least version 0.9995 of XeTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
