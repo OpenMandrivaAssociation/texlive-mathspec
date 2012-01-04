@@ -6,7 +6,7 @@
 # catalog-version 0.2
 Name:		texlive-mathspec
 Version:	0.2
-Release:	1
+Release:	2
 Summary:	Specify arbitrary fonts for mathematics in XeTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/mathspec
