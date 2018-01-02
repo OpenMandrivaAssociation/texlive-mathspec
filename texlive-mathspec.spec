@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/xetex/latex/mathspec
-# catalog-date 2009-09-30 20:39:21 +0200
-# catalog-license lppl
-# catalog-version 0.2
 Name:		texlive-mathspec
-Version:	0.2
-Release:	10
+Version:	0.2b
+Release:	1
 Summary:	Specify arbitrary fonts for mathematics in XeTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/mathspec
@@ -36,10 +30,8 @@ requires at least version 0.9995 of XeTeX.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/xelatex/mathspec/mathspec.sty
-%doc %{_texmfdistdir}/doc/xelatex/mathspec/README
-%doc %{_texmfdistdir}/doc/xelatex/mathspec/mathspec.pdf
-%doc %{_texmfdistdir}/doc/xelatex/mathspec/mathspec.tex
+%{_texmfdistdir}/tex/xelatex/mathspec
+%doc %{_texmfdistdir}/doc/xelatex/mathspec
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,17 +42,3 @@ requires at least version 0.9995 of XeTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2-2
-+ Revision: 753780
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.2-1
-+ Revision: 718975
-- texlive-mathspec
-- texlive-mathspec
-- texlive-mathspec
-- texlive-mathspec
-
