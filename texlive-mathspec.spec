@@ -3,7 +3,7 @@ Version:	42773
 Release:	2
 Summary:	Specify arbitrary fonts for mathematics in XeTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/mathspec
+URL:		https://www.ctan.org/tex-archive/macros/xetex/latex/mathspec
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathspec.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathspec.doc.r%{version}.tar.xz
